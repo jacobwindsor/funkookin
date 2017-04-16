@@ -10,3 +10,5 @@ export const create = (name, ingredients) =>
     name,
     ingredients: List(ingredients),
   });
+
+export const updateName = (recipe, name) => recipe.set('name', name);
