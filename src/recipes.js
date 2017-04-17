@@ -11,4 +11,6 @@ export const create = (name, ingredients) =>
     ingredients: List(ingredients),
   });
 
-export const updateName = (recipe, name) => recipe.set('name', name);
+const set = recipe => recipe.set;
+
+export const updateName = (recipe, name) => set(recipe)('name', name);
